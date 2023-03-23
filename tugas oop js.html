@@ -1,0 +1,113 @@
+<html>
+  <head>
+    <title>Tugas 6 OOP JS</title>
+  </head>
+
+  <body>
+    <script>
+      class Gempa {
+        constructor(lokasi, skala) {
+          this.lokasi = lokasi;
+          this.skala = skala;
+        }
+
+        dampak() {
+          if (this.skala <= 2) {
+            return "Gempa Tidak Terasa";
+          } else if (this.skala > 2 && this.skala <= 4) {
+            return "Bangunan Retak-Retak";
+          } else if (this.skala > 4 && this.skala <= 6) {
+            return "Bangunan Roboh";
+          } else {
+            return "Bangunan Roboh Dan Berpotensi Tsunami";
+          }
+        }
+      }
+
+      const gempa1 = new Gempa("Aceh", 3.5);
+      const gempa2 = new Gempa("Padang", 5.6);
+      const gempa3 = new Gempa("Jakarta", 2.1);
+      const gempa4 = new Gempa("Yogyakarta", 6.9);
+      const gempa5 = new Gempa("Bandung", 4.3);
+      const gempa6 = new Gempa("Surabaya", 7.2);
+      const gempa7 = new Gempa("Medan", 2.8);
+      const gempa8 = new Gempa("Makassar", 8.0);
+
+      document.write("<h2>Informasi Gempa dan Dampaknya</h2>");
+      document.write("<ul>");
+      document.write(
+        "<li>Lokasi: " +
+          gempa1.lokasi +
+          ", Skala: " +
+          gempa1.skala +
+          ", Dampak: " +
+          gempa1.dampak() +
+          "</li>"
+      );
+      document.write(
+        "<li>Lokasi: " +
+          gempa2.lokasi +
+          ", Skala: " +
+          gempa2.skala +
+          ", Dampak: " +
+          gempa2.dampak() +
+          "</li>"
+      );
+      document.write(
+        "<li>Lokasi: " +
+          gempa3.lokasi +
+          ", Skala: " +
+          gempa3.skala +
+          ", Dampak: " +
+          gempa3.dampak() +
+          "</li>"
+      );
+      document.write(
+        "<li>Lokasi: " +
+          gempa4.lokasi +
+          ", Skala: " +
+          gempa4.skala +
+          ", Dampak: " +
+          gempa4.dampak() +
+          "</li>"
+      );
+      document.write(
+        "<li>Lokasi: " +
+          gempa5.lokasi +
+          ", Skala: " +
+          gempa5.skala +
+          ", Dampak: " +
+          gempa5.dampak() +
+          "</li>"
+      );
+      document.write(
+        "<li>Lokasi: " +
+          gempa6.lokasi +
+          ", Skala: " +
+          gempa6.skala +
+          ", Dampak: " +
+          gempa6.dampak() +
+          "</li>"
+      );
+      document.write(
+        "<li>Lokasi: " +
+          gempa7.lokasi +
+          ", Skala: " +
+          gempa7.skala +
+          ", Dampak: " +
+          gempa7.dampak() +
+          "</li>"
+      );
+      document.write(
+        "<li>Lokasi: " +
+          gempa8.lokasi +
+          ", Skala: " +
+          gempa8.skala +
+          ", Dampak: " +
+          gempa8.dampak() +
+          "</li>"
+      );
+      document.write("<ul>");
+    </script>
+  </body>
+</html>
